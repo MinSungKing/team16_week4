@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-04-04T14:33:47</date>
+  <millis>1459748027014</millis>
+  <sequence>0</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>
+======================Bill System======================
+1-&gt; Get Result
+2-&gt; Exit</message>
+</record>
+<record>
+  <date>2016-04-04T14:33:55</date>
+  <millis>1459748035527</millis>
+  <sequence>1</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Type a sequence. Gold or Silver, Usage of minutes, Usage of lines (ex : Gold 900 1)</message>
+</record>

@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2016-04-03T12:18:34</date>
-  <millis>1459653514693</millis>
+  <date>2016-04-03T13:45:59</date>
+  <millis>1459658759217</millis>
   <sequence>0</sequence>
   <logger>org.team16.team16week4.Bill</logger>
   <level>INFO</level>
@@ -16,9 +16,101 @@
 2-&gt; Exit</message>
 </record>
 <record>
-  <date>2016-04-03T12:18:35</date>
-  <millis>1459653515640</millis>
+  <date>2016-04-03T13:46:08</date>
+  <millis>1459658768724</millis>
   <sequence>1</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Type a sequence. Gold or Silver, Usage of minutes, Usage of lines (ex : Gold 900 1)</message>
+</record>
+<record>
+  <date>2016-04-03T13:46:30</date>
+  <millis>1459658790246</millis>
+  <sequence>2</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>
+======================RESULT======================
+Plan : Gold
+Total Usage Time : 1002
+Using Lines : 4
+
+TotalCost : 49.95 + (2*0.45) + (2*14.5) + 5.0 = 84.85
+AdditionalCost :  + (2*14.5) + 5.0
+OverExcessMinutesCost :  + (2*0.45)
+==================================================
+</message>
+</record>
+<record>
+  <date>2016-04-03T13:46:30</date>
+  <millis>1459658790249</millis>
+  <sequence>3</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>
+======================Bill System======================
+1-&gt; Get Result
+2-&gt; Exit</message>
+</record>
+<record>
+  <date>2016-04-03T13:46:59</date>
+  <millis>1459658819202</millis>
+  <sequence>4</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Type a sequence. Gold or Silver, Usage of minutes, Usage of lines (ex : Gold 900 1)</message>
+</record>
+<record>
+  <date>2016-04-03T13:47:31</date>
+  <millis>1459658851041</millis>
+  <sequence>5</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>
+======================RESULT======================
+Plan : Silver
+Total Usage Time : 700
+Using Lines : 2
+
+TotalCost : 29.95 + (200*0.54) + 21.5 = 159.45
+AdditionalCost :  + 21.5
+OverExcessMinutesCost :  + (200*0.54)
+==================================================
+</message>
+</record>
+<record>
+  <date>2016-04-03T13:47:31</date>
+  <millis>1459658851044</millis>
+  <sequence>6</sequence>
+  <logger>org.team16.team16week4.Bill</logger>
+  <level>INFO</level>
+  <class>org.team16.team16week4.AppController</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>
+======================Bill System======================
+1-&gt; Get Result
+2-&gt; Exit</message>
+</record>
+<record>
+  <date>2016-04-03T13:47:46</date>
+  <millis>1459658866741</millis>
+  <sequence>7</sequence>
   <logger>org.team16.team16week4.Bill</logger>
   <level>INFO</level>
   <class>org.team16.team16week4.AppController</class>
