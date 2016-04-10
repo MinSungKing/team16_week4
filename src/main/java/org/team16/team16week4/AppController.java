@@ -19,46 +19,39 @@ public class AppController {
 	{
 		while(true)
 		{
-			
-			try{
-				logger.log(Level.INFO, "\n======================Bill System======================\n1-> "
-					+ "Get Result\n2-> Exit");
+			logger.log(Level.INFO, "\n======================Bill System======================\n1-> "
+				+ "Get Result\n2-> Exit");
 				
-				int choose = sc.nextInt();
+			int choose = sc.nextInt();
 				
-				if(choose == 1)
+			if(choose == 1)
+			{
+				logger.log(Level.INFO, "Type a sequence. Gold or Silver, Usage of minutes, Usage of lines (ex : Gold 900 1)");
+				String planType = sc.next();
+				int usedMinutes = sc.nextInt();
+				int numberOfLines = sc.nextInt();
+				
+				if (numberOfLines < 0)	
 				{
-					logger.log(Level.INFO, "Type a sequence. Gold or Silver, Usage of minutes, Usage of lines (ex : Gold 900 1)");
-					String planType = sc.next();
-					int usedMinutes = sc.nextInt();
-					int numberOfLines = sc.nextInt();
-					
-					if (numberOfLines < 0)	
-					{
-						throw new Exception("\nERROR!!\nNegative number cannot be used for line number\n\n");
-					}
-					else
-					{
-						Bill newBill = new Bill(planType, usedMinutes, numberOfLines);
-						logger.log(Level.INFO, "\n======================RESULT======================\nPlan : " + planType 
-								+ "\nTotal Usage Time : " + usedMinutes + "\nUsing Lines : " 
-								+ numberOfLines + "\n\n" + newBill.drawBill() + "==================================================\n");
-					}
-				}
-				else if(choose == 2)
-				{
-					logger.log(Level.INFO, "======================End Program======================");
-						
-					break;
+					logger.log(Level.INFO, "\nERROR!!\nNegative number cannot be used for line number\n\n");
 				}
 				else
 				{
-					throw new Exception("\nERROR!!\nWrong menu choosed\n\n");
+					Bill newBill = new Bill(planType, usedMinutes, numberOfLines);
+					logger.log(Level.INFO, "\n======================RESULT======================\nPlan : " + planType 
+						+ "\nTotal Usage Time : " + usedMinutes + "\nUsing Lines : " 
+						+ numberOfLines + "\n\n" + newBill.drawBill() + "==================================================\n");
 				}
 			}
-			catch(Exception e)
+			else if(choose == 2)
 			{
-				logger.log(Level.SEVERE, e.getMessage());
+				logger.log(Level.INFO, "======================End Program======================");
+					
+				break;
+			}
+			else
+			{
+				logger.log(Level.INFO, "\nERROR!!\nWrong menu choosed\n\n");
 			}
 		}
 	}

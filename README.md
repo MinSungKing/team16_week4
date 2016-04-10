@@ -12,7 +12,7 @@ It covers 'Bill System'
 
 Clone this repository and
 
-	mv build
+	cd build
 	java -jar team16_bill_system.jar
 	
 <h1>Input</h1>
